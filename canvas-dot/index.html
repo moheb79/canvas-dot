@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      #canvas {
+        width: 100%;
+        height: 100%;
+      }
+      #config {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        background-color: rgb(206, 206, 206);
+        border: 1px solid darkslategray;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        opacity: 0.5;
+        transition: all 300ms linear;
+        margin: 0 0.1rem;
+      }
+      button:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="config">
+      <button id="reset">Reset</button>
+      <button id="AddDots">Add Dot</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
